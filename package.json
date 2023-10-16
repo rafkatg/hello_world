@@ -1,0 +1,24 @@
+{
+  "name": "hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafkatg/hello_world.git"
+  },
+  "keywords": [],
+  "author": "rafkatg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafkatg/hello_world/issues"
+  },
+  "homepage": "https://github.com/rafkatg/hello_world#readme",
+  "dependencies": {
+    "eslint": "^8.51.0"
+  }
+}
