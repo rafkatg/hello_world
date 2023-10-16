@@ -12,7 +12,8 @@ jobs:
   pr-lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: morrisoncole/pr-lint-action@v1.7.0
+      - name: Pull Request Linter
+        uses: MorrisonCole/pr-lint-action@v1.7.0
         with:
           # Note: if you have branch protection rules enabled, the `GITHUB_TOKEN` permissions
           # won't cover dismissing reviews. Your options are to pass in a custom token
