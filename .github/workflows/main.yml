@@ -24,11 +24,11 @@ jobs:
           # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token
           # https://docs.github.com/en/rest/pulls/reviews#dismiss-a-review-for-a-pull-request
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          title-regex: "[A-Z]+-[0-9]+"
+          title-regex: "^(feat|fix|chore|style|perf|test|build|ci)\([a-zA-Z0-9, -]*\)\:[а-яА-Я\s\w]+\(\w+-\d+\)$"
           on-failed-regex-fail-action: true
           on-failed-regex-create-review: true
-          on-failed-regex-request-changes: false
+          on-failed-regex-request-changes: true
           on-failed-regex-comment:
-            "This is just an example. Failed regex: `%regex%`!"
+            "Пожалуйста, придерживайтесь синтаксиса Conventional Commits для заголовков PR ;)"
           on-succeeded-regex-dismiss-review-comment:
-            "This is just an example. Success!"
+            "Спасибо <3"
